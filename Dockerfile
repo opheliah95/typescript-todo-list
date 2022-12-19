@@ -11,5 +11,6 @@ COPY . /app/
 
 # switch to user with lesser priviliege
 USER node 
-
+CMD ["npm", "start"]
+EXPOSE 8080
 
