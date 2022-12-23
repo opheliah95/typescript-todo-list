@@ -2,18 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <script src="dist/index.js" type="module"></script>
+    <meta name="description" content="My Todo List App" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
     <title>Todo-List-App</title>
   </head>
   <body>
-    <ul id="list"></ul>
-    <form id="new-task-form">
-      <input type="text" id="new-task-title">
-      <button type="submit">Add</button>
-    </form>
+    <div id="render" style="color-scheme: dark;">
+      <ul id="list"></ul>
+      <form id="new-task-form">
+        <input type="text" id="new-task-title" value="Enter task detail...">
+        <button type="submit">Add</button>
+      </form>
+    </div>
   </body>
 </html>
