@@ -4,6 +4,9 @@
   --font-color: #e8eaed;
   --background: --var(--dark, rgba(32,33,36,1))
                 --var(--light, #ffffff);
+  --input-color: rgb(255, 169, 5);
+  --box-shadow: rgb(33, 13, 146);
+  --general-padding: 5px;
 }
 
 
@@ -18,16 +21,28 @@
   :root {
     --font-color: #e8eaed;
     --background: rgba(32,33,36,1);
+    --input-color: rgb(255, 169, 5);
   }
 }
 
- 
-#new-task-form {
-  margin: 50px auto;
-  width: 255px;
-  color: var(--font-color);
+
+#flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
 }
+
+
 
 body{
   background-color: var(--background);
+}
+
+input[type=text] {
+  color: var(--input-color);
+  border:0;
+  box-shadow:0 0 15px 4px var(--box-shadow);
+  padding: var(--general-padding);
+  width: 300px;
 }
